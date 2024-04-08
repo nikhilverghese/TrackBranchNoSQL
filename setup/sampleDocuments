@@ -1,0 +1,144 @@
+//format:
+// {
+//     "project_id",
+//     "project_name",
+//     "location",
+//     "size",
+//     "date_created",
+//     "attributes": [{
+//         "bpm",
+//         "key",
+//         "last_modified",
+//         "genre": [{ //there are 15 genres to choose from
+//             "genre_id",
+//             "genre_name"
+//         }],
+//         "completion"
+//         "custom_attributes":[] //can be as many attributes needed all unique though
+        
+//     }],
+//     "notes": [{ //can be as many notes needed
+//         "message",
+//         "date_created"
+//     }],
+//     "exports": [{ //can be as many exports needed
+//         "name",
+//         "location",
+//         "date_created"
+//     }]
+// }
+
+//example:
+[
+{
+    "_id": {
+      "$oid": "6613858e78bdd9ff1b2a3185"
+    },
+    "project_id": 9,
+    "project_name": "pede",
+    "location": "ableton/projects/pede.als",
+    "size": 933,
+    "date_created": "2/24/2023",
+    "attributes": {
+      "bpm": 122,
+      "key": "F Major",
+      "last_modified": "9/14/2024",
+      "completion": 0.75,
+      "custom_attributes": [
+        "guitar riff"
+      ]
+    },
+    "genre": [
+      {
+        "genre_id": 15,
+        "genre_name": "Jazz"
+      },
+      {
+        "genre_id": 10,
+        "genre_name": "Rock"
+      }
+    ],
+    "notes": [
+      {
+        "message": "cymbal bleeding",
+        "date_created": "3/22/2023"
+      },
+      {
+        "message": "mix piano better",
+        "date_created": "3/23/2023"
+      }
+    ],
+    "exports": [
+      {
+        "name": "pede1",
+        "location": "ableton/exports/pede.wav",
+        "date_created": "5/9/2023"
+      }
+    ]
+  },
+
+  //Or
+    {
+    "_id": {
+      "$oid": "6613858e78bdd9ff1b2a318d"
+    },
+    "project_id": 17,
+    "project_name": "etiam",
+    "location": "ableton/projects/etiam.als",
+    "size": 535,
+    "date_created": "9/20/2023",
+    "attributes": {
+      "bpm": 120,
+      "key": "C# Minor",
+      "last_modified": "7/23/2023",
+      "completion": 0.75,
+      "custom_attributes": [
+        "fire synth"
+      ]
+    },
+    "genre": [
+      {
+        "genre_id": 13,
+        "genre_name": "Synth"
+      }
+    ],
+    "notes": [],
+    "exports": []
+  },
+
+  //Or
+  {
+    "_id": {
+      "$oid": "6613858e78bdd9ff1b2a3195"
+    },
+    "project_id": 25,
+    "project_name": "nisl",
+    "location": "ableton/projects/nisl.als",
+    "size": 881,
+    "date_created": "8/3/2023",
+    "attributes": {
+      "bpm": 121,
+      "key": "D Minor",
+      "last_modified": "8/22/2023",
+      "completion": 1,
+      "custom_attributes": [
+        "guitar riff",
+        "fire chords",
+        "trumpet sample"
+      ]
+    },
+    "genre": [
+      {
+        "genre_id": 4,
+        "genre_name": "Ambient"
+      },
+    ],
+    "notes": [
+      {
+        "message": "broken mic",
+        "date_created": "3/18/2024"
+      },
+    ],
+    "exports": []
+  }
+]
