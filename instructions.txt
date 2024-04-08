@@ -1,0 +1,3 @@
+To initalize the dump:
+
+mongoimport -h localhost:27017 -d TrackBranch -c projects --file trackBranch.dump
